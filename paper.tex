@@ -2,6 +2,7 @@
 \usepackage{graphicx}
 \usepackage{fixltx2e}
 \usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
 
 
 \graphicspath{ {images/} }
@@ -17,7 +18,7 @@
 \section{Abstract}
 
 
-Within the last year a  great deal of interest has built up around establishing a human colony on Mars. Major space industry players such as NASA\cite{nasa} and SpaceX\cite{spacex} have proposed full scale plans to establish such a colony and a number of lesser players have also expressed an interest in doing so. The motivations for establishing a Mars Colony include economic gain, scientific \& exploratory achievement\cite{nasa} --- some even consider it a way of ensuring the survival of the human race\cite{spacex}. Regardless of the motivation, much is unknown about such an endeavour. 
+Within the last year a  great deal of interest has built up around establishing a human colony on Mars. Major space industry players such as NASA\cite{nasa} and SpaceX\cite{spacex} have proposed full scale plans to establish such a colony and a number of lesser players have also expressed an interest in doing so. The motivations for establishing a Mars Colony include economic gain, scientific knowledge \& exploratory achievement\cite{nasa}. Some even consider it a way of ensuring the survival of the human race\cite{spacex}. Regardless of the motivation, much is unknown about such an endeavour. 
 
 
 In preparation for the establishment of such a colony it is vital to understand and forecast the population growth in order to manage resources efficiently and ensure the survival of the colony. This paper will attempt to model the potential population growth of a Martian colony and present a model that may be later refined as more information becomes known on the colony so as to aid in the resource planning of the colony and prevent resource shortages from decimating the colony. 
@@ -230,7 +231,7 @@ r=0.037,r\textsubscript{K}=0.05,t\textsubscript{m}=1.48
 \section{Applying the Model to Mars}
 
 
-Once the model has been constructed, it can be utilized to project what the population growth of a Martian colony may look like. A significant positive of this model and the methods used to construct it is that is is trivial to refine the model further as new data is gathered as the simulated annealing process can be run continuously as new data becomes available. For now though, the usefulness of the model is limited to it's ability to be adjusted to different sets of assumptions and time frames and interpreted.
+Once the model has been constructed, it can be utilized to project what the population growth of a Martian colony may look like. A significant positive of this model and the methods used to construct it is that it is trivial to refine the model further as new data is gathered as the simulated annealing process can be run continuously as new data becomes available. For now though, the usefulness of the model is limited to it's ability to be adjusted to different sets of assumptions and time frames and interpreted.
 
 
 Projecting a Mars Colony population over 1000 years with the model produces: 
@@ -246,6 +247,13 @@ From above, it can be expected that the first 400 years of a Martian colony will
 
 
 This initial growth will be limited in it's growth as it approaches  25,000,000 due to the limitation of technology and overall space to live on Mars while living space is confined to artificial habitats. However, this carrying capacity imposed by technological constraints is likely to driven upwards rapidly after about 800 years of human habitation of Mars. The reason for such growth will be driven by the advent of technologies to terraform Mars into a habitable planet\cite{terraform}, thus greatly increasing the living space, and carrying capacity of a Martian colony. 
+
+\section{Code \& Presentation}
+The code developed for use in this project along with a presentation in Jupyter Notebook slides can be found at 
+\begin{itemize}
+\item{Code: \href{https://github.com/rugggg/MarsModel}{https://github.com/rugggg/MarsModel}}
+\item{Presentation: \href{https://rugggg.github.io/MarsModel}{https://rugggg.github.io/MarsModel}}
+\end{itemize}
 
 
 \begin{thebibliography}{9}
